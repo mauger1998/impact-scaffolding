@@ -8,7 +8,7 @@
     --tablet-heading-two:60px;
     --mobile-heading-two:50px;
     --mobile-tag:18px;
-    --mobile-text:12px;
+    --mobile-text:14px;
     --mobile-card-heading:20px;
 }
 
@@ -75,7 +75,7 @@ body {
     right:0;
     top:calc(100% + 0.5rem);
     padding:1.5rem;
-    background-color:var(--green);
+    background-color:var(--red);
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.432);
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -90,6 +90,8 @@ body {
 }
 .dropdown-heading > a {
     font-weight:500 !important;
+    color:var(--black) !important;
+
 }
 .dropdown-links {
     display:flex;
@@ -665,7 +667,7 @@ main .wrapper h1 {
 }
 @Media (max-width:1000px) {
     .meet-the-team-section .wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap:4rem;
     }
     .team-left {
@@ -691,6 +693,15 @@ main .wrapper h1 {
     }
     .team-left h2 {
         font-size:var(--mobile-heading-two);
+    }
+    .team-left h2 {
+        font-size:35px;
+    }
+}
+@Media (max-width:378px) {
+    .full-team {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 /* Contact */
@@ -791,5 +802,104 @@ form button {
     }
     .contact-left h2 {
         font-size:35px;
+    }
+}
+
+/* Footer */
+
+footer .wrapper {
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block:2rem;
+    padding-top:4rem;
+}
+.footer-top {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block:1rem;
+}
+.logo-footer {
+    width:20%;
+}
+.logo-footer img {
+    width:150px;
+}
+.icons {
+    width:20%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:1rem;
+}
+.footer-top ul {
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    width:60%;
+    justify-content: center;
+}
+.footer-bottom {
+    width:100%;
+    border-top:1px solid white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block:1rem;
+}
+.island {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.5rem;
+}
+.island p {
+    font-size:20px;
+    color:white;
+}
+.island img {
+    width:125px;
+}
+
+@media (max-width:1000px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap:4rem;
+        padding-block:4rem;
+    }
+    .footer-bottom {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:4rem;
+        padding-block:4rem;
+    }
+    
+    .icons {
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        display:flex;
+    }
+    .logo-footer,
+    footer ul {
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        display:flex;
+    }
+}
+
+@media (max-width:700px) {
+    footer .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    footer .wrapper {
+        padding-inline:1rem;
     }
 }
