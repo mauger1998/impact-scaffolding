@@ -764,6 +764,7 @@ textarea {
     padding-inline:0.5rem;
     background-color:#b8b4b476;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border:none;
     border-radius:0.75rem;
     color:white;
