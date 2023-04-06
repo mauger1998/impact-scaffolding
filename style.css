@@ -722,7 +722,9 @@ main .wrapper h1 {
 }
 /* Contact */
 .contact-section {
-    background-image: linear-gradient(to bottom, #030303, #03030300 75%), linear-gradient(to top, #030303, #03030300 75%), url(scaffolding-home-png/mi4.png)
+    background-image: linear-gradient(to bottom, #030303, #03030300 75%), linear-gradient(to top, #030303, #03030300 75%), url(scaffolding-home-png/mi4.png);
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 .contact-section .wrapper {
