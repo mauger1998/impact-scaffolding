@@ -247,11 +247,13 @@ main .wrapper p {
     }
 }
 
-@media (max-width:373px) {
+@media (max-width:416px) {
     main .wrapper p {
         max-width:34ch;
     }
 }
+
+
 @media (max-width:316px) {
     
     main .wrapper p {
@@ -293,7 +295,7 @@ main .wrapper p {
 @media (max-width:500px) {
     .what-we-do-section .wrapper {
         padding-inline:1rem;
-        padding-top:0;
+        padding-top:4rem !important;
     }
     .what-we-do-titles h2 {
         font-size:var(--mobile-heading-two);
@@ -440,6 +442,12 @@ main .wrapper p {
 .quote-section .wrapper button img {
     width:30px;
     align-self: flex-end;
+    transition:0.5s;
+
+}
+.quote-section .wrapper button:hover img {
+    transform: scale(1.2) rotateZ(720deg);
+    transition:0.5s;
 }
 @media (max-width:1100px) {
     .quote-section h2 {
@@ -611,4 +619,16 @@ footer .wrapper {
     footer .wrapper {
         padding-inline:1rem;
     }
+}
+
+.red-button {
+    transition:500ms;
+
+}
+
+.red-button:hover {
+    background-color:transparent;
+    color:var(--red);
+    transform:scale(0.9);
+    transition:500ms;
 }

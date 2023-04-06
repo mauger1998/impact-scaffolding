@@ -150,6 +150,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position:fixed;
+    z-index:1000000 !important;
 }
 .header-wrapper {
     padding:2rem 4rem;
@@ -411,6 +412,12 @@ main .wrapper h1 {
 .services-section .wrapper button img {
     width:30px;
     align-self: flex-end;
+    transition:0.5s;
+
+}
+.services-section .wrapper button:hover img {
+    transform: scale(1.2) rotateZ(720deg);
+    transition:0.5s;
 }
 @media (max-width:1000px) {
     .services-section .wrapper {
@@ -655,6 +662,12 @@ main .wrapper h1 {
 }
 .full-team button img {
     align-self:flex-end;
+    transition:0.5s;
+
+}
+.full-team button:hover img {
+    transform: scale(1.2) rotateZ(720deg);
+    transition:0.5s;
 }
 .image-item {
     color:white;
@@ -914,4 +927,16 @@ footer .wrapper {
     footer .wrapper {
         padding-inline:1rem;
     }
+}
+
+.red-button {
+    transition:500ms;
+
+}
+
+.red-button:hover {
+    background-color:transparent;
+    color:var(--red);
+    transform:scale(0.9);
+    transition:500ms;
 }
