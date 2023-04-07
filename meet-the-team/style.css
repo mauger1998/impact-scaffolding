@@ -263,7 +263,7 @@ main .wrapper p {
 /* Team Intro */
 
 .team-intro-section {
-    background-image: linear-gradient(to bottom, #030303, #03030300 40%), linear-gradient( #03030350, #03030350 100%), linear-gradient(to top, #030303, #03030300 40%), url(../scaffolding-team-png/c7589c8e-71b2-4355-8237-2fb7727d15fe.png);
+    background-image: linear-gradient(to bottom, #030303, #03030300 70%), linear-gradient( #03030350, #03030350 100%), linear-gradient(to top, #030303, #03030300 70%), url(../scaffolding-team-png/c7589c8e-71b2-4355-8237-2fb7727d15fe.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
